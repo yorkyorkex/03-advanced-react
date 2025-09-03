@@ -6,7 +6,6 @@ const UseStateGotcha = () => {
   const handleClick = () => {
     setValue((currentState) => {
       const newState = currentState + 1
-
       return newState
     })
     // console.log(value)
