@@ -4,7 +4,7 @@
 //import Starter from './tutorial/01-useState/starter/04-useState-object'
 //import Starter from './tutorial/01-useState/starter/05-useState-gotcha'
 //impoerrt Starter from './tutorial/01-useState/starter/06-useState-counter'
-import Starter from './tutorial/02-useEffect/starter/01-code-example'
+import Starter from './tutorial/02-useEffect/starter/02-useEffect-basics'
 /* import Starter from './tutorial/02-useEffect/starter/02-useEffect-cleanup' */
 /* import Starter from './tutorial/02-useEffect/starter/03-useEffect-fetch-data' */
 /* import Starter from './tutorial/03-conditional-rendering/starter/01-multiple-returns' */
