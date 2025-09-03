@@ -4,12 +4,14 @@ const UseStateObject = () => {
   const [name, setName] = useState('john')
   const [age, setAge] = useState(24)
   const [hobby, setHobby] = useState('football')
+
   const displayPerson = () => {
     setName('peter')
     setAge(30)
     setHobby('tennis')
     console.log(name, age, hobby)
   }
+
   return (
     <>
       <h3></h3>
