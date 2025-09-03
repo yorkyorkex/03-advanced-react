@@ -5,8 +5,10 @@ const UseStateArray = () => {
   const [people, setPeople] = React.useState(data)
   console.log(people)
   const removeItem = (id) => {
-    let newPeople = people.filter((person) => person.id !== id)
-    setPeople(newPeople)
+    /*     const newPeople = people.filter((person) => person.id !== id)
+    setPeople(newPeople) */
+
+    setPeople(people.filter((person) => person.id !== id))
   }
   const clearAllItems = () => {
     setPeople([])
