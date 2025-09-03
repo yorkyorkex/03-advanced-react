@@ -6,7 +6,7 @@
 //impoerrt Starter from './tutorial/01-useState/starter/06-useState-counter'
 //import Starter from './tutorial/02-useEffect/starter/02-useEffect-basics'
 /* import Starter from './tutorial/02-useEffect/starter/02-useEffect-cleanup' */
-import Starter from './tutorial/02-useEffect/starter/03-multiple-effects'
+import Starter from './tutorial/02-useEffect/starter/04-fetch-data'
 //import Starter from './tutorial/03-conditional-rendering/starter/01-multiple-returns'
 /* import Starter from './tutorial/03-conditional-rendering/starter/02-short-circuit' */
 /* import Starter from './tutorial/03-conditional-rendering/starter/03-show-hide' */
