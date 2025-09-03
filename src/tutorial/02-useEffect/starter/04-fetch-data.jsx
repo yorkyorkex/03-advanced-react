@@ -7,9 +7,13 @@ const FetchData = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch(url)
-      const users = await response.json()
-      console.log(users)
+      try {
+        const response = await fetch(url)
+        const users = await response.json()
+        setUsers(users)
+      } catch (error) {
+        console.log(error)
+      }
     }
     fetchData()
   }, [])
