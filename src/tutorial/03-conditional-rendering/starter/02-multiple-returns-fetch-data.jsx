@@ -32,6 +32,7 @@ const MultipleReturnsFetchData = () => {
   if (isError) {
     return <h2>Error fetching user data</h2>
   }
+
   const { avatar_url, name, bio, location, public_repos, html_url } = users
   return (
     <>
