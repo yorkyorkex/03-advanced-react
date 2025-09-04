@@ -25,6 +25,10 @@ const ShortCircuitExamples = () => {
       ) */}
 
       {user && <SomeComponent name={user.name} />}
+      <button className="btn" onClick={() => setIsEditing(!isEditing)}>
+        {isEditing ? 'close' : 'open'}
+      </button>
+      {isEditing && <h1>hello world</h1>}
     </div>
   )
 }
