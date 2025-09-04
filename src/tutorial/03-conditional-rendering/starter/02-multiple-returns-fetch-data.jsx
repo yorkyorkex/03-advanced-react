@@ -34,8 +34,15 @@ const MultipleReturnsFetchData = () => {
       <img
         style={{ borderRadius: '100%', width: '150px', height: '150px' }}
         src={users.avatar_url}
-        alt={users.login}
+        alt={users.name}
       />
+      <h4>{users.name}</h4>
+      <p>{users.bio}</p>
+      <p>Location: {users.location}</p>
+      <p>Public repos: {users.public_repos}</p>
+      <a href={users.html_url} target="_blank" rel="noreferrer">
+        View profile on GitHub
+      </a>
     </>
   )
 }
