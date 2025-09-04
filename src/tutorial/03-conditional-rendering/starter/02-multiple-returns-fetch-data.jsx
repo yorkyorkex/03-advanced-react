@@ -32,19 +32,19 @@ const MultipleReturnsFetchData = () => {
   if (isError) {
     return <h2>Error fetching user data</h2>
   }
-
+  const { avatar_url, name, bio, location, public_repos, html_url } = users
   return (
     <>
       <img
         style={{ borderRadius: '100%', width: '150px', height: '150px' }}
-        src={users.avatar_url}
-        alt={users.name}
+        src={avatar_url}
+        alt={name}
       />
-      <h4>{users.name}</h4>
-      <p>{users.bio}</p>
-      <p>Location: {users.location}</p>
-      <p>Public repos: {users.public_repos}</p>
-      <a href={users.html_url} target="_blank" rel="noreferrer">
+      <h4>{name}</h4>
+      <p>{bio}</p>
+      <p>Location: {location}</p>
+      <p>Public repos: {public_repos}</p>
+      <a href={html_url} target="_blank" rel="noreferrer">
         View profile on GitHub
       </a>
     </>
