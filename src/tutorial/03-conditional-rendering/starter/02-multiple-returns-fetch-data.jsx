@@ -9,13 +9,18 @@ const MultipleReturnsFetchData = () => {
     const fetchUser = async () => {
       try {
         const resp = await fetch(url)
+        if (!resp.ok) {
+          setIsLoading(false)
+          setIsError(true)
+          return
+        }
         const user = await resp.json()
         setUsers(user)
-        setIsLoading(false)
       } catch (error) {
         console.log(error)
         setIsError(true)
       }
+      setIsLoading(false)
     }
     fetchUser()
   }, [])
