@@ -28,6 +28,15 @@ const MultipleReturnsFetchData = () => {
     return <h2>Error fetching user data</h2>
   }
 
-  return <h2>Fetch Data </h2>
+  return (
+    <>
+      <h2>Fetch Data</h2>
+      <img
+        style={{ borderRadius: '100%', width: '150px', height: '150px' }}
+        src={users.avatar_url}
+        alt={users.login}
+      />
+    </>
+  )
 }
 export default MultipleReturnsFetchData
