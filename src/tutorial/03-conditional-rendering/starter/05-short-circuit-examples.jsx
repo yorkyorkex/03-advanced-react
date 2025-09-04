@@ -17,6 +17,25 @@ const ShortCircuitExamples = () => {
           <h1>{name}</h1>
         </>
       )}
+      {/* !text && (
+        <>
+          <h2>Text is present</h2>
+          <h1>{name}</h1>
+        </>
+      ) */}
+
+      {user && <SomeComponent name={user.name} />}
+    </div>
+  )
+}
+
+const SomeComponent = ({ name }) => {
+  return (
+    <div>
+      <>
+        <h2>Some is present</h2>
+        <h1>{name}</h1>
+      </>
     </div>
   )
 }
