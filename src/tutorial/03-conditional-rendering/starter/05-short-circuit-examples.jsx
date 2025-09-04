@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const ShortCircuitExamples = () => {
   // falsy
-  const [text, setText] = useState('fdd')
+  const [text, setText] = useState('')
   // truthy
   const [name, setName] = useState('susan')
   const [user, setUser] = useState({ name: 'john' })
@@ -11,7 +11,7 @@ const ShortCircuitExamples = () => {
   return (
     <div>
       {text || 'default value'}
-      {text && (
+      {!text && (
         <>
           <h2>Text is present</h2>
           <h1>{name}</h1>
