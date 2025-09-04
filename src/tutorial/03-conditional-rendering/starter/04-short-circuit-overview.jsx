@@ -8,7 +8,7 @@ const ShortCircuitOverview = () => {
     <>
       <h2>short circuit overview</h2>
       <h3>False OR {text || 'default text'}</h3>
-      <h3>False And {text && 'default name'}</h3>
+      <h3>False And {text && 'default text'}</h3>
       <h3>True OR {name || 'default name'}</h3>
       <h3>True And {name && 'default name'}</h3>
     </>
