@@ -1,6 +1,20 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const ShortCircuitOverview = () => {
-  return <h2>short circuit overview</h2>;
-};
-export default ShortCircuitOverview;
+  const [text, setText] = useState('')
+  const [name, setName] = useState('john')
+
+  return (
+    <>
+      <h2>short circuit overview</h2>
+      <h3>False OR {text || 'default text'}</h3>
+      <h3>False And {text && 'default name'}</h3>
+      <h3>True OR {name || 'default name'}</h3>
+      <h3>True And {name && 'default name'}</h3>
+      <button className="btn" onClick={() => setText('hello world')}>
+        click me
+      </button>
+    </>
+  )
+}
+export default ShortCircuitOverview
