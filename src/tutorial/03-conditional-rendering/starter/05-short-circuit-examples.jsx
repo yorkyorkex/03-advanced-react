@@ -10,7 +10,7 @@ const ShortCircuitExamples = () => {
 
   return (
     <div>
-      {text || <h1>Hello World</h1>}
+      {text || 'default value'}
       {text && (
         <>
           <h2>Text is present</h2>
