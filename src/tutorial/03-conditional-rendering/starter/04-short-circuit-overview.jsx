@@ -11,9 +11,6 @@ const ShortCircuitOverview = () => {
       <h3>False And {text && 'default name'}</h3>
       <h3>True OR {name || 'default name'}</h3>
       <h3>True And {name && 'default name'}</h3>
-      <button className="btn" onClick={() => setText('hello world')}>
-        click me
-      </button>
     </>
   )
 }
