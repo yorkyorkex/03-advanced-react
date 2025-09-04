@@ -10,10 +10,11 @@ const MultipleReturnsFetchData = () => {
       try {
         const resp = await fetch(url)
         const user = await resp.json()
-        //setUsers(user)
-        console.log(user)
+        setUsers(user)
+        setIsLoading(false)
       } catch (error) {
         console.log(error)
+        setIsError(true)
       }
     }
     fetchUser()
