@@ -5,7 +5,7 @@ const ShortCircuitExamples = () => {
   const [text, setText] = useState('')
   // truthy
   const [name, setName] = useState('susan')
-  const [user, setUser] = useState({ name: 'john' })
+  const [user, setUser] = useState({ name: 'john1' })
   const [isEditing, setIsEditing] = useState(false)
 
   return (
@@ -25,10 +25,16 @@ const ShortCircuitExamples = () => {
       ) */}
 
       {user && <SomeComponent name={user.name} />}
-      <button className="btn" onClick={() => setIsEditing(!isEditing)}>
+      <button
+        className="btn"
+        onClick={() => {
+          setIsEditing(!isEditing)
+          user?.name ? setUser({ name: '' }) : setUser({ name: 'john3' })
+        }}
+      >
         {isEditing ? 'close' : 'open'}
       </button>
-      {isEditing && <h1>hello world</h1>}
+      {user ? <h1>hello world {user.name}</h1> : <h1>goodbye world</h1>}
     </div>
   )
 }
