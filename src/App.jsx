@@ -11,6 +11,8 @@
 /* import Starter from './tutorial/03-conditional-rendering/starter/02-short-circuit' */
 /* import Starter from './tutorial/03-conditional-rendering/starter/03-show-hide' */
 import Starter from './tutorial/04-project-structure/starter/Navbar'
+
+import { About, Home } from './tutorial/04-project-structure/starter/Pages'
 /* import Starter from './tutorial/04-forms/starter/02-multiple-inputs' */
 /* import Starter from './tutorial/05-useRef/starter/01-useRef-basics' */
 /* import Starter from './tutorial/05-useRef/starter/02-useRef-timer' */
@@ -26,6 +28,8 @@ function App() {
   return (
     <div className="container">
       <Starter />
+      <Home />
+      <About />
     </div>
   )
 }
