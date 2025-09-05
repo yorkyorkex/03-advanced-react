@@ -7,7 +7,7 @@
 //import Starter from './tutorial/02-useEffect/starter/02-useEffect-basics'
 /* import Starter from './tutorial/02-useEffect/starter/02-useEffect-cleanup' */
 //import Starter from './tutorial/02-useEffect/starter/04-fetch-data'
-import Starter from './tutorial/03-conditional-rendering/starter/05-short-circuit-examples'
+import Starter from './tutorial/03-conditional-rendering/starter/06-toggle-challenge'
 /* import Starter from './tutorial/03-conditional-rendering/starter/02-short-circuit' */
 /* import Starter from './tutorial/03-conditional-rendering/starter/03-show-hide' */
 /* import Starter from './tutorial/04-forms/starter/01-controlled-inputs' */
