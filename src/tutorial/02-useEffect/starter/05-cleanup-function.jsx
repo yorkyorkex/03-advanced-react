@@ -3,13 +3,7 @@ import { use } from 'react'
 import { useState, useEffect } from 'react'
 const CleanupFunction = () => {
   const [toggle, setToggle] = useState(false)
-
-  useEffect(() => {
-    console.log('Effect ran')
-    return () => {
-      console.log('Cleanup')
-    }
-  }, [toggle])
+  console.log('Effect ran')
 
   return (
     <div>
@@ -25,9 +19,12 @@ const CleanupFunction = () => {
 
 const RandomComponent = () => {
   useEffect(() => {
-    console.log('Random component mounted')
+    const intID = setInterval(() => {
+      console.log('Interval running')
+    }, 1000)
     return () => {
-      console.log('Random component unmounted')
+      clearInterval(intID)
+      console.log('Cleanup')
     }
   }, [])
   return <h2>Random component</h2>
