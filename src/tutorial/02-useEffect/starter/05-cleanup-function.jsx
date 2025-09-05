@@ -22,8 +22,14 @@ const RandomComponent = () => {
     const intID = setInterval(() => {
       console.log('Interval running')
     }, 1000)
+    window.addEventListener('scroll', () => {
+      console.log('Scroll event')
+    })
     return () => {
       clearInterval(intID)
+      window.removeEventListener('scroll', () => {
+        console.log('Scroll event')
+      })
       console.log('Cleanup')
     }
   }, [])
