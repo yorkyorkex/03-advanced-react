@@ -10,13 +10,13 @@
 //import Starter from './tutorial/03-conditional-rendering/starter/07-user-challenge'
 /* import Starter from './tutorial/03-conditional-rendering/starter/02-short-circuit' */
 /* import Starter from './tutorial/03-conditional-rendering/starter/03-show-hide' */
-import Example from './tutorial/04-project-structure/starter/Example'
-import Starter from './tutorial/04-project-structure/starter/Navbar'
+//import Example from './tutorial/04-project-structure/starter/Example'
+//import Starter from './tutorial/04-project-structure/starter/Navbar'
 
-import { About, Home } from './tutorial/04-project-structure/starter/Pages'
+//import { About, Home } from './tutorial/04-project-structure/starter/Pages'
 /* import Starter from './tutorial/04-forms/starter/02-multiple-inputs' */
-/* import Starter from './tutorial/05-useRef/starter/01-useRef-basics' */
-/* import Starter from './tutorial/05-useRef/starter/02-useRef-timer' */
+import List from './tutorial/05-leverage-javascript/starter/List'
+/* import Starter from './tutorial/05-useRef/starter/-useRef-timer' */
 /* import Starter from './tutorial/06-useReducer/starter/01-useReducer-basics' */
 /* import Starter from './tutorial/06-useReducer/starter/02-useReducer-advanced' */
 /* import Starter from './tutorial/06-useReducer/starter/03-useReducer-fetch-data' */
@@ -28,10 +28,8 @@ import Final from './tutorial/07-useRef/final/01-useRef-basics'
 function App() {
   return (
     <div className="container">
-      <Starter />
-      <Home />
-      <About />
-      <Example />
+      {/* <Starter /> */}
+      <List />
     </div>
   )
 }
