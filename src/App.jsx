@@ -15,7 +15,7 @@
 
 //import { About, Home } from './tutorial/04-project-structure/starter/Pages'
 /* import Starter from './tutorial/04-forms/starter/02-multiple-inputs' */
-import Starter from './tutorial/06-forms/starter/03-multiple-inputs'
+import Starter from './tutorial/06-forms/starter/04-other-inputs'
 /* import Starter from './tutorial/05-leverage-javascript/starter/03-advanced-objects' */
 import Final from './tutorial/07-useRef/final/01-useRef-basics'
 
