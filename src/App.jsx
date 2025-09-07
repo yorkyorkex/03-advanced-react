@@ -15,13 +15,14 @@
 
 //import { About, Home } from './tutorial/04-project-structure/starter/Pages'
 /* import Starter from './tutorial/04-forms/starter/02-multiple-inputs' */
-import Starter from './tutorial/08-custom-hooks/starter/02-fetch-data'
+import Starter from './tutorial/09-context-api/starter/Navbar'
 /* import Starter from './tutorial/05-leverage-javascript/starter/03-advanced-objects' */
-import Final from './tutorial/07-useRef/final/01-useRef-basics'
+import Final from './tutorial/09-context-api/final/context/Navbar'
 
 function App() {
   return (
     <div className="container">
+      <Final />
       <Starter />
     </div>
   )
