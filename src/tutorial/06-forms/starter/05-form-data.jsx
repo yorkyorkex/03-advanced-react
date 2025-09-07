@@ -13,6 +13,7 @@ const UncontrolledInputs = () => {
     console.log(name)
     const email = formData.get('email')
     console.log(email)
+    console.log(...formData.entries())
     const password = formData.get('password')
     console.log(password)
     console.log(name, email, password)
