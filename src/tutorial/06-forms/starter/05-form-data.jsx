@@ -7,7 +7,7 @@ const UncontrolledInputs = () => {
     e.preventDefault()
     console.log(e.currentTarget)
     const formData = new FormData(e.currentTarget)
-    console.log(formData)
+    /*     console.log(formData)
     console.log(...formData)
     const name = formData.get('name')
     console.log(name)
@@ -17,6 +17,10 @@ const UncontrolledInputs = () => {
     const password = formData.get('password')
     console.log(password)
     console.log(name, email, password)
+    setValue(value + 1)
+    e.currentTarget.reset() */
+    const newUser = Object.fromEntries(formData)
+    console.log(newUser)
     setValue(value + 1)
     e.currentTarget.reset()
   }
