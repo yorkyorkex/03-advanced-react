@@ -17,12 +17,11 @@
 /* import Starter from './tutorial/04-forms/starter/02-multiple-inputs' */
 import Starter from './tutorial/09-context-api/starter/Navbar'
 /* import Starter from './tutorial/05-leverage-javascript/starter/03-advanced-objects' */
-import Final from './tutorial/09-context-api/final/context/Navbar'
+import Final from './tutorial/10-useReducer/starter/01-useReducer'
 
 function App() {
   return (
     <div className="container">
-      <Final />
       <Starter />
     </div>
   )
