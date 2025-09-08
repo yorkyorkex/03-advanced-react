@@ -2,27 +2,48 @@ import React, { useState, useReducer } from 'react'
 import { data } from '../../../data'
 import { use } from 'react'
 
+const CLEAR_LIST = 'CLEAR_LIST'
+const RESET_LIST = 'RESET_LIST'
+const REMOVE_ITEM = 'REMOVE_ITEM'
+
 const defaultState = {
   people: data,
   isLoading: false,
   isError: false,
 }
 
-const reducer = () => {}
+const reducer = (state, action) => {
+  if (action.type === CLEAR_LIST) {
+    return { ...state, people: [] }
+  }
+  if (action.type === RESET_LIST) {
+    return { ...state, people: data }
+  }
+  if (action.type === REMOVE_ITEM) {
+    const newPeople = state.people.filter(
+      (person) => person.id !== action.payload
+    )
+    return { ...state, people: newPeople }
+  }
+  throw new Error(`no matching action type ${action.type}`)
+}
 
 const ReducerBasics = () => {
   const [state, dispatch] = useReducer(reducer, defaultState)
 
   const removeItem = (id) => {
+    dispatch({ type: REMOVE_ITEM, payload: id })
     /*     let newPeople = people.filter((person) => person.id !== id)
     setPeople(newPeople) */
   }
 
   const clearList = () => {
-    /*     setPeople([]) */
+    dispatch({ type: CLEAR_LIST })
+    // setPeople([])
   }
   const resetList = () => {
-    /*     setPeople(data) */
+    dispatch({ type: RESET_LIST })
+    // setPeople(data)
   }
 
   return (
@@ -36,7 +57,7 @@ const ReducerBasics = () => {
           </div>
         )
       })}
-      {people.length < 1 ? (
+      {state.people.length < 1 ? (
         <button
           className="btn"
           style={{ marginTop: '2rem' }}
