@@ -15,15 +15,15 @@
 
 //import { About, Home } from './tutorial/04-project-structure/starter/Pages'
 /* import Starter from './tutorial/04-forms/starter/02-multiple-inputs' */
-import Starter from './tutorial/11-performance/starter/03-hooks'
+import Starter from './tutorial/11-performance/starter/04-react-18'
 /* import Starter from './tutorial/05-leverage-javascript/starter/03-advanced-objects' */
 import Final from './tutorial/02-useEffect/final/04-fetch-data'
 
 function App() {
   return (
     <div className="container">
-      <Final />
-      {/* <Starter /> */}
+      {/*       <Final /> */}
+      <Starter />
     </div>
   )
 }
